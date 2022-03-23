@@ -1,6 +1,14 @@
 package com.revature.demo2;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Artist {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int artist_id;
     private String name;
 
