@@ -12,6 +12,8 @@ public class Artist {
     private int artist_id;
     private String name;
 
+    public Artist() {
+    }
     public Artist(int artist_id, String name) {
         this.artist_id = artist_id;
         this.name = name;
